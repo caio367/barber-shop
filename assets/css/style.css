@@ -1,0 +1,104 @@
+/* ===== GERAL ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%; /* 1rem = 10px, Com isso pode usar REM à vontade */
+
+    --primary-black: hsl(0, 8%, 9%);
+
+    --nav-height: 7.2rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: 'Roboto';
+    font-size: 1.6rem;
+    text-align: center;
+    overflow: overlay;
+}
+
+.wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+section{
+    padding-block: 10rem;
+}
+
+/* ===== Navbar ===== */
+
+nav{
+    display: flex;
+    width: 100vw;
+    height: (--nav-height);
+
+    top: 0;
+    z-index: 100;
+    position: fixed;
+
+    background: var(--primary-black);
+}
+
+.logo img{
+    width: 10rem;
+}
+
+nav .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .wrapper .menu{
+    display: flex;
+    align-items: center;
+}
+
+nav .menu a{ 
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600 lighter;
+}
+
+nav .menu,
+nav .close-menu{
+    position: fixed;
+}
+
+/* ===== Menu-expandido ===== */
+
+body.menu-expanded {
+    overflow: hidden;
+}
+
+body.menu-expanded > :not(nav){
+    visibility: hidden;
+}
+
