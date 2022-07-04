@@ -7,10 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barbearia Antunes</title>
 
-  <!-- Fonte: Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- O "defer" permite o JavaScript ser inserido aqui! -->
   <script src="./assets/js/script.js" defer></script> 
@@ -32,10 +31,66 @@
           <li><a href="#">Conceito</a></li>
           <li><a href="#">Equipe</a></li>
           <li><a href="#">Contato</a></li>
+          <li><a href="#">Nossos serviços</a></li>
         </ul>
+      </div>    
 
-        <a href="#" class="button">Nossos Serviços</a>
-      </div>         
+      <button
+        aria-expanded="false"
+        aria-label="Abrir menu"
+        onclick="openMenu()"
+        class="open-menu btn">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 20H30"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M10 12H30"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 28L30 28"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <button
+        aria-expanded="true"
+        aria-label="Fechar menu"
+        onclick="closeMenu()"
+        class="close-menu btn">
+        <svg
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M30 10L10 30M10 10L30 30"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
     </div>
   </nav> 
 
