@@ -57,7 +57,7 @@ section{
 }
 
 section h1{
-    color: var(--luminous-white);
+    color: var(--primary-blue);
     font-size: 5rem;
     line-height: 6rem;
     font-weight: 700;  
@@ -65,9 +65,11 @@ section h1{
 }
 
 section h3{
-    color: var(--luminous-white);
     font-size: 2rem;
     font-weight: 200;
+    border-bottom: 0.1px solid rgb(219, 219, 219);
+    text-transform: uppercase;
+    color: var(--primary-brown);
     text-align: left;
 }
 
@@ -79,8 +81,8 @@ nav{
     top: 0;
     width: 100vw;
 
+    background-color: var(--primary-blue);
     position: fixed;
-    background: none;
 }
 
 .logo img{
@@ -221,11 +223,19 @@ body.menu-expanded button path {
     margin-block: calc(var(--nav-height) + 5rem);
 }
 
+#home h1,
 #home h3{
-    margin: 2rem 0 5rem 0;
+    color: var(--luminous-white);
 }
 
-#home a{
+#home h3{
+    margin: 2rem 0 5rem 0;
+    text-transform: none;
+    border: none;
+}
+
+#home a,
+#services a{
     background-color: var(--primary-brown);
     color: var(--primary-blue);
     border: 0.1rem solid var(--primary-blue);
@@ -238,25 +248,21 @@ body.menu-expanded button path {
     padding: 1.6rem 3.2rem;
 }
 
-#home a:hover{
+#home a:hover,
+#services a:hover{
     background-color: var(--brown-hover);
     filter: brightness(1.3);
 }
 
 /* ===== Home (Seção 2) ===== */
 #concept h1{
-    color: var(--primary-blue);
     margin-block: 3rem;
 }
 
 #concept h3{
-    color: var(--primary-brown);
-
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
     text-transform: uppercase;
-
-    border-bottom: 0.1px solid rgb(219, 219, 219);
 }
 
 #concept .content p{
@@ -270,4 +276,54 @@ body.menu-expanded button path {
     margin-top: 6rem;
 }
 
-/* ===== Equipe (Seção 3) ===== */
+/* ===== Serviços (Seção 3) ===== */
+
+#services h1{
+    margin-block: 3rem;
+}
+
+#services h3{
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+#services table,
+#services td,
+#services th{
+    border-collapse: collapse;
+}
+
+#services table{
+    width: 100%;
+    border: 0.1px solid rgb(145, 145, 145);
+}
+
+#services th{
+    font-size: 2.4rem;
+    color: var(--primary-brown);
+    padding: 1rem
+}
+
+#services td{
+    font-size: 1.9rem;
+    color: rgb(139, 139, 139);
+    padding: 1rem;
+}
+
+#services tr td:nth-child(2){
+    color: var(--primary-blue);
+}
+
+#services .content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+
+
+
+
+
+
