@@ -175,8 +175,10 @@ body.menu-expanded .menu {
 }
 
 .menu ul li .special-option{
-    color: var(--primary-blue);
-    font-weight: 700;
+    color: white;
+
+    font-size: 1.6rem;
+    font-weight: 500;
 }
 
 .menu ul li:nth-child(5){
@@ -237,11 +239,10 @@ body.menu-expanded button path {
 #home a,
 #services a{
     background-color: var(--primary-brown);
-    color: var(--primary-blue);
-    border: 0.1rem solid var(--primary-blue);
+    color: white;
 
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.6rem;
+    font-weight: 500;
     text-transform: uppercase;
     
     margin-inline: auto;
@@ -255,14 +256,15 @@ body.menu-expanded button path {
 }
 
 /* ===== Home (Seção 2) ===== */
-#concept h1{
+#concept h1,
+#services h1{
     margin-block: 3rem;
 }
 
-#concept h3{
+#concept h3,
+#services h3{
     font-size: 1.7rem;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 #concept .content p{
@@ -276,15 +278,47 @@ body.menu-expanded button path {
     margin-top: 6rem;
 }
 
-/* ===== Serviços (Seção 3) ===== */
+/* ===== Data (Seção 3) ===== */
 
-#services h1{
-    margin-block: 3rem;
+#data{
+    padding-block: 3rem;
 }
 
-#services h3{
-    font-weight: 700;
-    font-size: 1.7rem;
+#data .content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+    margin-block: auto;
+    padding-block: 5rem;
+}
+
+#data .box-1,
+#data .box-2{
+    padding-bottom: 5rem;
+    border-bottom: 0.1px solid rgb(219, 219, 219);
+}
+
+#data i{
+    color: var(--primary-brown);
+    font-size: 4rem;
+}
+
+#data p{
+
+    padding-top: 2.5rem;
+}
+
+/* ===== Serviços (Seção 4) ===== */
+
+#services{
+    background-color: rgb(248, 248, 248);
+}
+
+#services h1,
+#services h3,
+#services p{
+    text-align: right;
 }
 
 #services table,
@@ -306,8 +340,8 @@ body.menu-expanded button path {
 
 #services td{
     font-size: 1.9rem;
-    color: rgb(139, 139, 139);
-    padding: 1rem;
+    color: rgb(128, 128, 128);
+    padding: 0.6rem;
 }
 
 #services tr td:nth-child(2){
@@ -319,6 +353,8 @@ body.menu-expanded button path {
     flex-direction: column;
     gap: 4rem;
 }
+
+
 
 
 
