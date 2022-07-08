@@ -281,7 +281,7 @@ body.menu-expanded button path {
 /* ===== Data (Seção 3) ===== */
 
 #data{
-    padding-block: 3rem;
+    padding-top: 3rem;
 }
 
 #data .content{
@@ -305,7 +305,8 @@ body.menu-expanded button path {
 }
 
 #data p{
-
+    font-size: 1.7rem;
+    line-height: 160%;
     padding-top: 2.5rem;
 }
 
@@ -353,7 +354,6 @@ body.menu-expanded button path {
     flex-direction: column;
     gap: 4rem;
 }
-
 
 
 
