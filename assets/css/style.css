@@ -198,7 +198,7 @@ body.menu-expanded button {
 }
   
 body.menu-expanded button path {
-    stroke: var(--primary-blue);
+    stroke: #ffffff;
 }
 
 /* ===== Home (Seção 1) ===== */
@@ -257,12 +257,14 @@ body.menu-expanded button path {
 
 /* ===== Home (Seção 2) ===== */
 #concept h1,
-#services h1{
+#services h1,
+#contact h1{
     margin-block: 3rem;
 }
 
 #concept h3,
-#services h3{
+#services h3,
+#contact h3{
     font-size: 1.7rem;
     font-weight: 700;
 }
@@ -354,6 +356,29 @@ body.menu-expanded button path {
     flex-direction: column;
     gap: 4rem;
 }
+
+/* ===== Contato (Seção 5) ===== */
+
+#contact .map iframe{
+    width: 100%;
+    margin-inline: auto;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background-color: var(--primary-blue);
+    padding-block: 6rem;
+}
+
+footer .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
 
 
 
