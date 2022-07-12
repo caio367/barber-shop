@@ -373,15 +373,29 @@ footer{
 
 footer .wrapper{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
 }
 
+footer .col-b{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
+footer .col-b ul{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
 
-
-
-
+footer p{
+    text-align: left;
+    line-height: 200%;
+    color: white;
+}
 
 
 
