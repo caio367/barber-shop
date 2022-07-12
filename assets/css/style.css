@@ -150,7 +150,7 @@ body.menu-expanded .menu {
     background: var(--primary-blue);
   
     width: 100vw;
-    height: 35rem;
+    height: 38rem;
   
     padding-top: var(--nav-height);
   
@@ -181,7 +181,7 @@ body.menu-expanded .menu {
     font-weight: 500;
 }
 
-.menu ul li:nth-child(5){
+.menu ul li:nth-child(6){
     padding: 0.8rem;
     background: var(--primary-brown);
 }
@@ -258,13 +258,13 @@ body.menu-expanded button path {
 /* ===== Home (Seção 2) ===== */
 #concept h1,
 #services h1,
-#contact h1{
+#about h1{
     margin-block: 3rem;
 }
 
 #concept h3,
 #services h3,
-#contact h3{
+#about h3{
     font-size: 1.7rem;
     font-weight: 700;
 }
@@ -359,7 +359,7 @@ body.menu-expanded button path {
 
 /* ===== Contato (Seção 5) ===== */
 
-#contact .map iframe{
+#about .map iframe{
     width: 100%;
     margin-inline: auto;
 }
