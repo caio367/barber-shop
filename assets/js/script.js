@@ -6,17 +6,17 @@ function closeMenu(){
   document.body.classList.remove('menu-expanded')
 }
 
-function agendado(){
-alert("Agendamento feito!")
+function scheduleTime(){
+  alert("Agendamento feito!")
 }
 
-var boxAgend = document.getElementById("boxAgendamento");
+var boxAgend = document.getElementById("boxSchedule");
 
 // Get the button that opens the modal
-var btn = document.getElementById("agendamentoBtn");
+var btn = document.getElementById("scheduleButton");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("closeModal")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {

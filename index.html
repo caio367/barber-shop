@@ -30,7 +30,7 @@
           <li><a href="#data">Contato</a></li>
           <li><a href="#services">Serviços</a></li>
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#services" class="special-option">Agendar horário</a></li>
+          <li><a class="special-option" id="scheduleButton">Agendar horário</a></li>
         </ul>
       </div>    
 
@@ -102,42 +102,60 @@
         </header>
 
         <div class="content">
-<!--          <button href="#services" onclick="abrirAgendamento()">Agendar horário</button>-->
-<!--          <a href="#services">Agendar horário</a>-->
-          <button id="agendamentoBtn">Agendar horário</button>
+          <a id="scheduleButton">Agendar horário</a>
+
           <!-- The Modal -->
-          <div id="boxAgendamento" class="boxAgend">
+          <div id="boxSchedule" class="boxSched">
             <!-- Modal content -->
-            <div class="boxAgend-content">
-              <span class="close">&times;</span>
+            <div class="boxSched-content">
+              <span class="closeModal">&times;</span>
               <form>
-<!--                VERIFICAR METODO GET OU POST PARA O ENVIO-->
-                <p>Preencha o formulário para agendar seu atendimento:</p>
-                Nome: <input type="text" name="nome" placeholder="Digite seu Nome aqui"><br>
-                CPF: <input type="number" name="cpf" placeholder="Digite seu CPF aqui"><br>
-                E-mail: <input type="email" name="e-mail" placeholder="Digite seu e-mail aqui"><br>
-                Contato: <input type="number" name="contato" placeholder="Digite seu telefone aqui"><br>
-                Serviço:
+                <header>
+                  <h1>Informe seus dados para agendar um horário:</h1>
+                </header>
+
+                <label>Nome</label>
+                <input type="text" name="nome"><br>
+
+                <label>CPF</label>
+                <input type="number" name="cpf"><br>
+
+                <label>E-mail</label>
+                <input type="email" name="e-mail"><br>
+
+                <label>Contato</label>
+                <input type="number" name="contato"><br>
+                
+                <label>Serviço</label>
                 <select name="services">
-                <option value="valor1">Cabelo</option>
+                  <option value="valor1">Cabelo</option>
                   <option value="valor2">Barba</option>
-                  <option value="valor3">Cabelo e barba</option>
-              </select><br>
-                Dia e Horário: <input type="datetime-local" name="dateTime"><br>
-                Observação: <textarea>Observação</textarea>
-                <input type="submit" value="Confirmar" onclick="agendado()">
+                  <option value="valor3">Barba + Cabelo</option>
+                  <option value="valor4">Hidratação</option>
+                  <option value="valor5">Pintura</option>
+                  <option value="valor6">Corte na Máquina</option>
+                  <option value="valor7">Sobrancelha</option>
+                  <option value="valor8">Alisamento</option>
+                  <option value="valor9">Progressiva</option>
+                  <option value="valor10">Luzes</option>
+                  <option value="valor11">Pezinho</option>
+                </select>
+                <br>
+                
+                <label>Data</label>
+                <input type="datetime-local" name="dateTime">
+                <br>
+
+                <label>Observação</label>
+                <textarea>Quer deixar alguma informação importante? Fala pra gente!</textarea>
+                <input type="submit" value="Confirmar" onclick="scheduleTime()">
               </form>
             </div>
           </div>
         </div>
-
-
-
       </div>     
     </div>
   </section>
-
-
 
   <section id="concept">
     <div class="wrapper">
@@ -193,12 +211,12 @@
             <th>Valores</th>
           </tr>
           <tr>
-            <td>Barba</td>
-            <td>R$ 15</td>
-          </tr>
-          <tr>
             <td>Cabelo</td>
             <td>R$ 25</td>
+          </tr>
+          <tr>
+            <td>Barba</td>
+            <td>R$ 15</td>
           </tr>
           <tr>
             <td>Barba + Cabelo</td>
@@ -237,7 +255,7 @@
             <td>R$ 10</td>
           </tr>
         </table>
-        <a href="#services">Agendar horário</a>
+        <a id="scheduleButton">Agendar horário</a>
       </div>
     </div>
   </section>
@@ -324,51 +342,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Showcase 1
-    <section class="agendamento-servico">
-      <h2>Selecione o barbeiro: </h2>
-      <div class="barbeiro-select" width="20%">
-        <select>
-          <option>Caio</option>
-          <option>Gustavo</option>
-          <option>Joandrey</option>
-      </select>
-      </div>
-      <h2>Selecione a data: </h2>
-      <div class="dia">
-        <input type="date">
-      </div>
-      <h2>Selecione o horário: </h2>
-      <div class="hora">
-        <label for="appt">Selecione o horário: </label>
-        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-        <small>Horário de funcionamento: 09:00 as 18:00</small>
-      </div>
-
-    </section>
-
-    <section class="agendamento">
-        <div class="agendamento-container">
-            
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8341881405004!2d-46.74399528521287!3d-23.646108470612067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51cf43a682eb%3A0xa5d8c9e03718984a!2sVila%20Das%20Belezas!5e0!3m2!1spt-BR!2sbr!4v1606445554192!5m2!1spt-BR!2sbr" width="520" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
-            <div class="agendamento-item">
-                <h1>AGENDE AGORA POR AQUI</h1>
-                <p>Selecione seu horário abaixo, e agende seu horário.</p>
-
-                <a href="#"><i class="fab tabela-agenda"></i> agende seu horario</a>
-            </div>
-
-        </div>
-      </section>
-
-    <div class="container my-5">
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-        <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
-        <-- Grid container -->
 
   <script src="./assets/js/script.js"></script> 
       
