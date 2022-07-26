@@ -435,9 +435,9 @@ footer p{
 
 #home .boxSched-content form h1{
     color: var(--primary-blue);
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 5rem;
-    width: 90%;
+    width: 85%;
 }
 
 #home .boxSched-content form header{
@@ -465,16 +465,16 @@ footer p{
 #home form select{
     border: 0.1px solid rgb(199, 198, 198);
     border-radius: 0;
+    background-color: white;
     text-align: left;
     height: 2.7rem;
 }
-
 
 #home input:last-child{
     background-color: var(--primary-brown);
     color: white;
     border: none;
-    border-radius: 0;
+    border-radius: 0rem;
 
     font-size: 1.5rem;
     font-weight: 500;
