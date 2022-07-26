@@ -14,8 +14,8 @@ var boxAgend = document.getElementById("boxSchedule");
 
 // Get the button that opens the modal
 var btn = document.getElementById("scheduleButton");
-var btn2 = document.getElementById("scheduleButton2")
-var btn3 = document.getElementById("scheduleButton3")
+var btn2 = document.getElementById("scheduleButton2");
+var btn3 = document.getElementById("scheduleButton3");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("closeModal")[0];
@@ -44,5 +44,7 @@ window.onclick = function(event) {
     boxAgend.style.display = "none";
   }
 }
+
+
 
 

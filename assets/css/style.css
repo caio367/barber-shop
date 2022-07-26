@@ -363,6 +363,7 @@ body.menu-expanded button path {
     border-radius: 1.5rem;
 }
 
+
 /* ===== Footer ===== */
 
 footer{
@@ -460,15 +461,14 @@ footer p{
     margin-right: 2rem;
 }
 
-#home form input{
-    border: 2px solid var(--primary-blue);
-    border-radius: 0.3rem;
-    height: 2.5rem;
+#home form input,
+#home form select{
+    border: 0.1px solid rgb(199, 198, 198);
+    border-radius: 0;
+    text-align: left;
+    height: 2.7rem;
 }
 
-#home form textarea{
-    min-height: 7rem;
-}
 
 #home input:last-child{
     background-color: var(--primary-brown);
@@ -480,10 +480,8 @@ footer p{
     font-weight: 500;
     text-transform: uppercase;
     
-    margin-inline: auto;
-    margin-block: 1rem;
-    width: fit-content;
-    padding: 2rem;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
 }
 
 #home input:last-child:hover{

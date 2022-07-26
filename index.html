@@ -106,7 +106,7 @@
 
           <!-- The Modal -->
           <div id="boxSchedule" class="boxSched">
-            
+ 
             <!-- Modal content -->
             <div class="boxSched-content">
               <span class="closeModal">&times;</span>
@@ -117,7 +117,7 @@
 
                 <div class="field">
                   <label>Nome</label>
-                  <input type="text" name="nome"><br>
+                  <input required type="text" name="name"><br>
                 </div>
 
                 <div class="field">
@@ -126,9 +126,9 @@
                 </div>
 
                 <div class="field">
-                  <label>Contato</label>
-                  <input type="number" name="contato"><br>
-                </div>
+                  <label>Telefone</label>
+                  <input required type="text" name="contact"><br>
+                </div> 
 
                 <div class="field">
                   <label>Serviço</label>
@@ -150,16 +150,11 @@
                 
                 <div class="field">
                   <label>Data</label>
-                  <input type="datetime-local" name="dateTime">
+                  <input required type="datetime-local">
                   <br>
                 </div>
-
-                <div class="field">
-                  <label>Observação</label>
-                  <textarea>Quer deixar alguma informação importante? Fala pra gente!</textarea>
-                </div>
                 
-                <input type="text" style="text-align:center" value="Confirmar" onclick="scheduleTime()">  
+                <input type="submit" onclick="validateForm()">  
               </form>
             </div>
           </div>
