@@ -287,7 +287,7 @@ body.menu-expanded button path {
     line-height: 160%;
 }
 
-#concept .content img{
+#concept .col-b img{
     border-radius: 1.5rem;
     margin-top: 6rem;
 }
@@ -544,8 +544,8 @@ footer p{
 
     #home a,
     #services a{
-    font-size: 1.8rem;
-    padding: 1.8rem 3.5rem;
+        font-size: 1.8rem;
+        padding: 1.8rem 3.5rem;
     }
 
     /* ===== Data ===== */
@@ -620,6 +620,124 @@ footer p{
     #home input:last-child{        
         margin: 1rem auto;
     }   
+}
+
+@media (min-width: 1024px){
+
+    /* ===== Geral ===== */
+    body{
+        overflow: auto;
+    }
+    
+    .wrapper{
+        width: min(112rem, 100%);
+    }
+
+    /* ===== Navigation ===== */
+    nav .wrapper * {
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        font-weight: initial;
+        transform: initial;
+        color: initial;
+        background-color: initial;
+        filter: initial;
+    }
+
+    nav .close-menu,
+    nav .open-menu{
+      display: none;
+    }
+
+    nav .wrapper{
+        padding-block: 1rem;
+    }
+
+    .menu ul:nth-child(1) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;     
+    }
+
+    /* ===== Home ===== */
+    #home::before{
+        background: #ffffff url("/barber-shop/assets/img/background.jpg") no-repeat center;
+        background-size: cover; 
+    
+        height: calc(100% - var(--nav-height));
+    }
+
+    #home h1,
+    #home h3{
+        text-align: center;
+    }
+
+    #home h1{
+        font-size: 5.5rem;
+        line-height: 8rem;
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    /* ===== Concept ====== */
+    #concept{
+        padding-block: 6rem;
+    }
+
+    #concept h3,
+    #services h3,
+    #about h3{
+        font-size: 2rem;
+    }
+
+    #concept .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    #concept h3{
+        width: 80%;
+    }
+
+    #concept p{
+        width: 80%;
+    }
+
+    /* ===== Data ===== */
+    #data{
+        padding-bottom: 5rem;
+    }
+
+    /* ===== Services ===== */
+    #services table{
+        width: 60%;
+    }
+
+    #services td{
+        padding: 0.5rem;
+    }
+
+    #services .content{
+        gap: 5rem;
+    }
+
+
+
+
+  
+
+
+
 }
 
 
