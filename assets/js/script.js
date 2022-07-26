@@ -45,6 +45,19 @@ window.onclick = function(event) {
   }
 }
 
+ScrollReveal({
+  origin: 'top',
+  distance: '20px',
+  duration: 800
+}).reveal(` 
+  #home header, 
+  #home a,
+  #concept header,
+  #concept .content,
+  #concept p,
+  #data,
+  #about header,
+  #about .content`)
 
 
 
