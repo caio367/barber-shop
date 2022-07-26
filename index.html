@@ -30,7 +30,7 @@
           <li><a href="#data">Contato</a></li>
           <li><a href="#services">Serviços</a></li>
           <li><a href="#about">Sobre</a></li>
-          <li><a class="special-option" id="scheduleButton">Agendar horário</a></li>
+          <li><a id="scheduleButton">Agendar horário</a></li>
         </ul>
       </div>    
 
@@ -102,10 +102,11 @@
         </header>
 
         <div class="content">
-          <a id="scheduleButton">Agendar horário</a>
+          <a id="scheduleButton2">Agendar horário</a>
 
           <!-- The Modal -->
           <div id="boxSchedule" class="boxSched">
+            
             <!-- Modal content -->
             <div class="boxSched-content">
               <span class="closeModal">&times;</span>
@@ -114,41 +115,51 @@
                   <h1>Informe seus dados para agendar um horário:</h1>
                 </header>
 
-                <label>Nome</label>
-                <input type="text" name="nome"><br>
+                <div class="field">
+                  <label>Nome</label>
+                  <input type="text" name="nome"><br>
+                </div>
 
-                <label>CPF</label>
-                <input type="number" name="cpf"><br>
+                <div class="field">
+                  <label>E-mail</label>
+                  <input type="email" name="e-mail"><br>
+                </div>
 
-                <label>E-mail</label>
-                <input type="email" name="e-mail"><br>
+                <div class="field">
+                  <label>Contato</label>
+                  <input type="number" name="contato"><br>
+                </div>
 
-                <label>Contato</label>
-                <input type="number" name="contato"><br>
+                <div class="field">
+                  <label>Serviço</label>
+                  <select name="services">
+                    <option value="valor1">Cabelo</option>
+                    <option value="valor2">Barba</option>
+                    <option value="valor3">Barba + Cabelo</option>
+                    <option value="valor4">Hidratação</option>
+                    <option value="valor5">Pintura</option>
+                    <option value="valor6">Corte na Máquina</option>
+                    <option value="valor7">Sobrancelha</option>
+                    <option value="valor8">Alisamento</option>
+                    <option value="valor9">Progressiva</option>
+                    <option value="valor10">Luzes</option>
+                    <option value="valor11">Pezinho</option>
+                  </select>
+                  <br>
+                </div>
                 
-                <label>Serviço</label>
-                <select name="services">
-                  <option value="valor1">Cabelo</option>
-                  <option value="valor2">Barba</option>
-                  <option value="valor3">Barba + Cabelo</option>
-                  <option value="valor4">Hidratação</option>
-                  <option value="valor5">Pintura</option>
-                  <option value="valor6">Corte na Máquina</option>
-                  <option value="valor7">Sobrancelha</option>
-                  <option value="valor8">Alisamento</option>
-                  <option value="valor9">Progressiva</option>
-                  <option value="valor10">Luzes</option>
-                  <option value="valor11">Pezinho</option>
-                </select>
-                <br>
-                
-                <label>Data</label>
-                <input type="datetime-local" name="dateTime">
-                <br>
+                <div class="field">
+                  <label>Data</label>
+                  <input type="datetime-local" name="dateTime">
+                  <br>
+                </div>
 
-                <label>Observação</label>
-                <textarea>Quer deixar alguma informação importante? Fala pra gente!</textarea>
-                <input type="submit" value="Confirmar" onclick="scheduleTime()">
+                <div class="field">
+                  <label>Observação</label>
+                  <textarea>Quer deixar alguma informação importante? Fala pra gente!</textarea>
+                </div>
+                
+                <input type="text" style="text-align:center" value="Confirmar" onclick="scheduleTime()">  
               </form>
             </div>
           </div>
@@ -255,7 +266,7 @@
             <td>R$ 10</td>
           </tr>
         </table>
-        <a id="scheduleButton">Agendar horário</a>
+        <a id="scheduleButton3">Agendar horário</a>
       </div>
     </div>
   </section>

@@ -7,19 +7,29 @@ function closeMenu(){
 }
 
 function scheduleTime(){
-  alert("Agendamento feito!")
+  alert("Agendado com sucesso!")
 }
 
 var boxAgend = document.getElementById("boxSchedule");
 
 // Get the button that opens the modal
 var btn = document.getElementById("scheduleButton");
+var btn2 = document.getElementById("scheduleButton2")
+var btn3 = document.getElementById("scheduleButton3")
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("closeModal")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
+  boxAgend.style.display = "block";
+}
+
+btn2.onclick = function() {
+  boxAgend.style.display = "block";
+}
+
+btn3.onclick = function() {
   boxAgend.style.display = "block";
 }
 
