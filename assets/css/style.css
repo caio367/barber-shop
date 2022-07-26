@@ -97,6 +97,7 @@ nav{
 
     background-color: var(--primary-blue);
     position: fixed;
+    z-index: 1;
 }
 
 .logo img{
