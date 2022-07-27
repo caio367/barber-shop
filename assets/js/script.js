@@ -46,16 +46,20 @@ window.onclick = function(event) {
 }
 
 ScrollReveal({
-  origin: 'top',
-  distance: '20px',
-  duration: 800
+  origin: 'left',
+  distance: '30px',
+  duration: 900
 }).reveal(` 
-  #home header, 
+  #home #scrollRevealh1, 
   #home a,
   #concept header,
-  #concept .content,
+  #concept .col-a,
+  #concept .col-b,
   #concept p,
   #data,
+  #services header,
+  #services .col-a,
+  #services .col-b,
   #about header,
   #about .content`)
 

@@ -411,6 +411,43 @@ footer p{
     color: white;
 }
 
+footer .insta,
+footer .face {
+    height: 30px;
+    transition-duration: 0.1s;
+}
+  
+footer .insta:hover {
+    height: 24px;
+}
+  
+footer .face:hover {
+    transition-duration: 0.1s;
+    height: 25px;
+}
+
+/* ===== Social Media Buttons ===== */
+#socialMediaFixedLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    background-color: hsla(218, 13%, 12%, 0.575);
+    padding: 2rem;
+    border-radius: 0.2rem;
+
+    position: fixed;
+    top: 20rem;
+    right: 0rem;
+    visibility: visible;
+    opacity: 1;
+}
+
+#socialMediaFixedLinks .insta:hover path,
+#socialMediaFixedLinks .face:hover path{
+    stroke: #ffffff;
+}
+
 /* ===== Modal de agendamento ===== */
 .boxSched {
   display: none; 
@@ -633,6 +670,18 @@ footer p{
         width: min(112rem, 100%);
     }
 
+    /* ===== Modal ===== */   
+    .boxSched-content {
+        width: 40%; 
+    }
+      
+    #home .boxSched-content form h1{
+        font-size: 2.5rem;
+        text-align: left;
+        width: 70%;
+        margin-inline: 0;
+    }
+
     /* ===== Navigation ===== */
     nav .wrapper * {
         margin: 0;
@@ -705,10 +754,7 @@ footer p{
         gap: 5rem;
     }
 
-    #concept h3{
-        width: 80%;
-    }
-
+    #concept h3,
     #concept p{
         width: 80%;
     }
@@ -719,6 +765,16 @@ footer p{
     }
 
     /* ===== Services ===== */
+    #services .wrapper{
+        justify-content: center;
+    }
+
+    #services h3,
+    #services h1,
+    #services p{
+        text-align: center;
+    }
+
     #services table{
         width: 60%;
     }
@@ -728,16 +784,26 @@ footer p{
     }
 
     #services .content{
-        gap: 5rem;
+        gap: 5.5rem;
     }
 
+    #services a{
+        margin-bottom: 4rem;
+    }
 
+    /* ===== About ===== */
+    #about .map iframe{
+        width: 60%;
+        height: 40rem;
+        margin-block: 3rem;
+        margin-inline: auto;
+    }
 
-
-  
-
-
-
+    #about h3,
+    #about h1{
+        text-align: center;
+        margin-inline: auto;
+    }
 }
 
 
