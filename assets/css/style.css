@@ -489,8 +489,8 @@ footer .face:hover {
 
 #home .boxSched-content form h1{
     color: var(--primary-blue);
-    font-size: 2.5rem;
-    line-height: 5rem;
+    font-size: 2.3rem;
+    line-height: 4.5rem;
     width: 85%;
 }
 
@@ -499,7 +499,7 @@ footer .face:hover {
 }
 
 #home .boxSched-content form label{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 5rem;
 
